@@ -1,3 +1,4 @@
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -13,5 +14,7 @@ public class TombsugTest {
     @Test
     public void testCalcRad_30_35(){
         double actual = this.tombsug.calcRadius(30,35);
+        double expected = 8.6;
+        Assert.assertEquals(actual, expected,0.1);
     }
 }
