@@ -24,7 +24,7 @@ public class TombsugTest {
         double expected = 14.142;
         Assert.assertEquals(actual, expected,0.1);
     }
-    @Test(expectedExceptions = InputMismatchException.class);
+    @Test(expectedExceptions = InputMismatchException.class)
     public void testCalcRadius_Zero_side(){
         this.tombsug.calcRadius(0, 1);
     }
