@@ -17,4 +17,10 @@ public class TombsugTest {
         double expected = 8.6;
         Assert.assertEquals(actual, expected,0.1);
     }
+    @Test
+    public void testCalcRad_40_45(){
+        double actual = this.tombsug.calcRadius(40,45);
+        double expected = 14.142;
+        Assert.assertEquals(actual, expected,0.1);
+    }
 }
