@@ -28,4 +28,8 @@ public class TombsugTest {
     public void testCalcRadius_Zero_side(){
         this.tombsug.calcRadius(0, 1);
     }
+    @Test(expectedExceptions = InputMismatchException.class)
+    public void testCalcRadius_Zero_angle(){
+        this.tombsug.calcRadius(1, 0);
+    }
 }
